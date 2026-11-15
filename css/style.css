@@ -1,3 +1,7 @@
+nav {
+    background-color: #ccc;
+}
+
 h1 {
     font-size: 90px;
 }
@@ -9,10 +13,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: blueviolet;
+}
+
+button {
+    font-size: 20px;
 }
 
 img {
     position: relative;
     width: 300px; 
     border-radius: 5px;
+}
+
+footer {
+    background-color: #ccc;
+    color: black;
 }
