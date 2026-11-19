@@ -1,18 +1,33 @@
 * {
     font-family: Bacasime Antique, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: linear-gradient(to top, #252B63, black);
+    
 }
 
 nav {
-    background-color: #ccc;
+    background-color: black;
+    margin-bottom: -20px;
+}
+
+.aboutUs {
+    font-size: 1.5rem;
+    padding: 50px;
+    margin-bottom: 0;
+    background-color: black;
+
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 7rem;
 }
 
 a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 a:hover {
@@ -20,9 +35,30 @@ a:hover {
     color: blueviolet;
 }
 
-button {
-    font-size: 20px;
+.bookNowbutton,
+.priceListbutton  {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #252B63;
+    margin-left: 50px;
+
 }
+
+.bookNowbutton:hover,
+.priceListbutton:hover {
+    background-color: #181C40;
+    transform: scale(1.1);
+}
+
+.bookNowbutton:active,
+.priceListbutton:active {
+    transform: scale(0.95);
+}
+
 
 img {
     position: relative;
@@ -31,6 +67,7 @@ img {
 }
 
 footer {
-    background-color: #ccc;
-    color: black;
+    font-size: 2rem;
+    background-color: #252B63;
+    color: white;
 }
