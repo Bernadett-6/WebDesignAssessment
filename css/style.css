@@ -82,6 +82,10 @@ a:hover {
     font-size: 2.5rem;
 }
 
+.addOnheading {
+    font-size: 1.9rem;
+}
+
 img {
     position: relative;
     width: 300px; 

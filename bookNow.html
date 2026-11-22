@@ -30,25 +30,13 @@
         <legend class="p-2 bookNowheading">Book your Appointment</legend>
 
         <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
+          <label for="name" class="form-label">Full Name</label>
           <input
             class="form-control"
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-
-        <div class="mb-3">
-          <label for="surname" class="form-label">Surname</label>
-          <input
-            class="form-control"
-            type="text"
-            id="surname"
-            name="surname"
-            placeholder="Enter your surname"
+            placeholder="Enter your full name"
             required
           />
         </div>
@@ -102,6 +90,18 @@
             <option value="shellac">Shellac</option>
           </select>
         </div>
+
+        <div class="mb-3">
+          <label for="service" class="form-label">Add ons</label>
+          <select class="form-control" id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="french">French</option>
+            <option value="simple nail art">Simple Nail Art</option>
+            <option value="detailed nail art">Detailed Nail Art</option>
+            <option value="chrome">Chrome</option>
+          </select>
+        </div>
+
       </fieldset>
 
       <button type="submit" class="formButton">Book Appointment</button>
