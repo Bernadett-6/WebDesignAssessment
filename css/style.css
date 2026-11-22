@@ -27,13 +27,14 @@ h1 {
 }
 
 a {
+    color: white;
     text-decoration: none;
     font-size: 2rem;
 }
 
 a:hover {
     text-decoration: underline;
-    color: blueviolet;
+    color: #384081;
 }
 
 .bookNowbutton,
@@ -45,10 +46,10 @@ a:hover {
     text-decoration: none;
     border-radius: 5px;
     background-color: #252B63;
+    color: white;
     margin-left: 50px;
 
 }
-
 
 .formButton {
     display: inline-block;
@@ -66,7 +67,9 @@ a:hover {
 .priceListbutton:hover,
 .formButton:hover {
     background-color: #181C40;
+    color: white;
     transform: scale(1.1);
+    text-decoration: none;
 }
 
 .bookNowbutton:active,
