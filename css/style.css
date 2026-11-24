@@ -6,7 +6,6 @@
 
 main {
     background-image: linear-gradient(to top, #252B63, black);
-    
 }
 
 nav {
@@ -60,7 +59,8 @@ a:hover {
     border: 0;
     border-radius: 5px;
     background-color: #252B63;
-    margin: 20px;
+    margin: 10px;
+    margin-left: 15px;
 }
 
 .bookNowbutton:hover,
@@ -96,4 +96,61 @@ footer {
     font-size: 2rem;
     background-color: #252B63;
     color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1 rem;
+        line-height: 1.2rem;
+        background: none;
+    }
+
+    main {
+        width: 100%;
+        min-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .headerCustom {
+        text-align: center;
+        font-size: 2rem;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .anchorsCustom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+    
+    .bookNowbutton,
+    .priceListbutton {
+        margin-right: 50px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #384081;
+    }
 }
