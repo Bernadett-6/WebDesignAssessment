@@ -14,7 +14,7 @@
     />
   </head>
 
-  <body class="bg-black">
+  <body class="formPage">
     <form
       action="#"
       method="post"
@@ -46,6 +46,17 @@
             placeholder="Enter your email address"
             required
           />
+        </div>
+
+        <div class="mb-3">
+          <label for="location">Location</label>
+          <select class="form-control" name="location" id="location" required>
+            <option value="">Select a branch</option>
+            <option value="dublin2">Dublin 2</option>
+            <option value="dublin15">Dublin 15</option>
+            <option value="cork">Cork</option>
+            <option value="galway">Galway</option>
+          </select>
         </div>
 
         <div class="mb-3">
@@ -88,6 +99,7 @@
 
         <div class="mb-5">
           <label for="service" class="form-label">Add ons</label>
+          <small>(Optional)</small>
           <select class="form-control" id="service" name="service">
             <option value="">Select a service</option>
             <option value="french">French</option>

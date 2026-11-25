@@ -12,7 +12,8 @@ header {
 }
 
 h1 {
- font-size: 7rem;
+ font-size: 8rem;
+ padding: 45px;
 }
 
 main {
@@ -39,14 +40,17 @@ table, th, td {
 
 }
 
-.socialMedia {
+.socialMedia a {
+    display: inline-flex;
+    justify-content: right;
     color: white;
     text-decoration: none;
     font-size: 2rem;
-    gap: 20px;
+    padding: 45px;
+    padding-top: 150px;
 }
 
-.socialMedia:hover {
+.socialMedia a:hover {
     text-decoration: underline;
     color: #384081;
 }
@@ -63,6 +67,21 @@ table, th, td {
     color: white;
     margin-left: 50px;
 
+}
+
+.formPage {
+    background-image: linear-gradient(to top, black, #252B63);
+}
+
+.form-control,
+.form-control:focus {
+    background-color: #11142ea4;
+    border: 2px solid white;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
 }
 
 .formButton {
@@ -108,7 +127,7 @@ img {
 }
 
 footer {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 50px;
     background-color: #252B63;
     color: white;
@@ -166,6 +185,28 @@ footer {
     .socialMedia:hover {
         text-decoration: underline;
         color: #384081;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .formPage {
+        padding: 10px;
+        margin-top: -28px;
+    }
+
+    .bookNowheading {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+
+    .formButton {
+       display: block;
+        margin: 0 auto;
     }
 
 }
