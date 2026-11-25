@@ -2,6 +2,17 @@
     font-family: Bacasime Antique, sans-serif;
     box-sizing: border-box;
     font-size: 1.2rem;
+    color: white;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+ font-size: 7rem;
 }
 
 main {
@@ -13,25 +24,29 @@ nav {
     margin-bottom: -20px;
 }
 
+table, th, td {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    margin: 0 auto;
+}
+
 .aboutUs {
     font-size: 1.5rem;
+    text-align: center;
     padding: 50px;
     margin-bottom: 0;
     background-color: black;
 
 }
 
-h1 {
-    font-size: 7rem;
-}
-
-a {
+.socialMedia {
     color: white;
     text-decoration: none;
     font-size: 2rem;
+    gap: 20px;
 }
 
-a:hover {
+.socialMedia:hover {
     text-decoration: underline;
     color: #384081;
 }
@@ -94,6 +109,7 @@ img {
 
 footer {
     font-size: 2rem;
+    padding: 50px;
     background-color: #252B63;
     color: white;
 }
@@ -101,7 +117,7 @@ footer {
 @media (max-width: 768px) {
     body {
         font-size: 1 rem;
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         background: none;
     }
 
@@ -112,7 +128,7 @@ footer {
         background-repeat: no-repeat;
     }
 
-    .headerCustom {
+    header {
         text-align: center;
         font-size: 2rem;
         justify-content: flex-start;
@@ -125,10 +141,8 @@ footer {
         font-size: 4rem;
     }
 
-    .anchorsCustom {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    .aboutUs {
+        text-align: center;
     }
 
     nav {
@@ -143,14 +157,15 @@ footer {
         margin-right: 50px;
     }
 
-    a {
+    .socialMedia{
         color: white;
         text-decoration: none;
         font-size: 1rem;
     }
 
-    a:hover {
+    .socialMedia:hover {
         text-decoration: underline;
         color: #384081;
     }
+
 }
