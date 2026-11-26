@@ -9,15 +9,22 @@ header {
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    gap: 20px;
 }
 
 h1 {
- font-size: 8rem;
- padding: 45px;
+font-size: clamp(4rem, 7vw, 8rem);
+padding: clamp(15px, 3vw, 45px);
+min-width: 0;
 }
 
 main {
     background-image: linear-gradient(to top, #252B63, black);
+}
+
+.gallery {
+    max-width: 1000px;
 }
 
 nav {
@@ -40,14 +47,21 @@ table, th, td {
 
 }
 
+.socialMedia {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    gap: clamp(12px, 2vw, 35px);
+    padding-right: clamp(15px, 3vw, 45px);
+}
 .socialMedia a {
     display: inline-flex;
     justify-content: right;
     color: white;
     text-decoration: none;
-    font-size: 2rem;
-    padding: 45px;
-    padding-top: 150px;
+    font-size: clamp(1.2rem,2vw, 2rem);
+    white-space: nowrap;
 }
 
 .socialMedia a:hover {
@@ -56,7 +70,8 @@ table, th, td {
 }
 
 .bookNowbutton,
-.priceListbutton  {
+.priceListbutton, 
+.reviewsButton  {
     display: inline-block;
     padding: 10px 20px;
     font-size: 2rem;
@@ -101,6 +116,7 @@ table, th, td {
 
 .bookNowbutton:hover,
 .priceListbutton:hover,
+.reviewsButton:hover,
 .formButton:hover {
     background-color: #181C40;
     color: white;
@@ -109,7 +125,8 @@ table, th, td {
 }
 
 .bookNowbutton:active,
-.priceListbutton:active {
+.priceListbutton:active,
+.reviewsButton:active {
     transform: scale(0.95);
 }
 
@@ -137,22 +154,37 @@ table, th, td {
 
 img {
     position: relative;
-    width: 300px; 
+    max-width: 100%;
     border-radius: 5px;
 }
 
 footer {
     font-size: 3rem;
-    padding: 50px;
+    padding: 50px 0;
     background-color: #252B63;
     color: white;
 }
 
+@media (max-width: 990px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socialMedia {
+        padding: 0 12px 20px;
+    }
+}
+
 @media (max-width: 768px) {
     body {
+        box-sizing: border-box;
         font-size: 1 rem;
         line-height: 1.5rem;
         background: none;
+        width: 100%;
+        max-width: 100%;
     }
 
     main {
@@ -172,7 +204,7 @@ footer {
         }
 
     h1 {
-        font-size: 4rem;
+        font-size: clamp(2.5rem, 9vw, 4rem);
     }
 
     .aboutUs {
@@ -187,17 +219,19 @@ footer {
     }
     
     .bookNowbutton,
-    .priceListbutton {
+    .priceListbutton,
+    .reviewsButton {
         margin-right: 50px;
     }
 
-    .socialMedia{
+    .socialMedia a {
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    
     }
 
-    .socialMedia:hover {
+    .socialMedia a:hover {
         text-decoration: underline;
         color: #384081;
     }
