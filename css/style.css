@@ -69,8 +69,10 @@ table, th, td {
 
 }
 
-.formPage {
+.formPage,
+.pricelistPage {
     background-image: linear-gradient(to top, black, #252B63);
+    min-height: 100vh;
 }
 
 .form-control,
@@ -112,12 +114,25 @@ table, th, td {
 }
 
 .priceListheading,
-.bookNowheading {
+.bookNowheading,
+.addOnheading {
     font-size: 2.5rem;
 }
 
-.addOnheading {
-    font-size: 1.9rem;
+.itemPrice {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 2px dotted white;
+}
+
+.price {
+    white-space: nowrap;
 }
 
 img {
