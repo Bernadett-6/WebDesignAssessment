@@ -10,34 +10,39 @@ hosted-page link:
 
 ## Website goal
 
-For my web design assessment I choose to do a nail appoitment booking website for a salon. The user is a client making an appointment or just checking out information about the salon like treatments,reviews or prices.
+This is a nail appointment booking website for a salon. The user is a client making an appointment or just checking out information about the salon like treatments,location,reviews or prices.
 
 ### Table of contents:
 
 - Home page
 - Book Now
 - Pricelist
-
-For inspiration I looked at other salon's websites in dublin like:
-
-https://www.dublinnails.com/
-https://sugardolls.ie/
-https://duchess.ie/
-https://www.tropicalpopical.com/
-
- I wanted to get a feel for what common elements a user who is using these websites would want to find and to make sure I include them in my own website. I concluded that the home page should have loads of pictures, have the book now button be very obvious as soon as you're on the home page and prices/treatments, reviews and location options were very important to have too. The pictures I ended up using were my own work i have done over the years.
-
-To aid me in the development i have used ChatGPT to speed up the process, i have made it generate the skeleton of my website for all my pages, this has helped to save time and be more efficient.
-
-https://chatgpt.com/share/6af9b299-1e34-83eb-9cbc-ce25f1a2c912
-
-https://chatgpt.com/share/6afe0d62-77a0-83ed-b375-b3bf1150e787
-
-https://chatgpt.com/share/6b034a12-f820-83eb-8365-ff94ad9177df
-
-https://chatgpt.com/share/6b0876d8-0ae4-83eb-bf5f-f2e945ff6355
+- Reviews
 
 ## HTML & CSS
+
+I have used semantic HTML tags for my webpage to ensure readability and accessibility.
+
+```
+<header>
+        <h1>Aetherium Nails</h1>
+
+
+<nav>
+
+    <a class="bookNowbutton" href="bookNow.html">Book Now</a>
+
+
+<main>
+
+    <div class="container py-3 gallery">
+        <div class="row g-3">
+
+
+<footer>
+    <div class="container-fluid">
+
+```
 
 Throughout the project i have used bootstrap and my own css to style the website. Here im using my own class names ( pricelistPage, itemPrice, etc.) in combination with bootstrap's grid system of containers,rows,columns this way it's easy to organize content and helps make the layout responsive to smaller screens while still being able to add other design choices like a gradient background that I wouldnt be able to achieve with just bootstrap.
 
@@ -82,3 +87,65 @@ Throughout the project i have used bootstrap and my own css to style the website
 }
 ```
 
+I am using consistent colors,buttons and font throughout all the pages to make navigation easier to understand.
+
+```
+
+.formPage,
+.pricelistPage,
+.reviewsPage {
+    background-image: linear-gradient(to top, black, #252B63);
+    min-height: 100vh;
+}
+
+```
+```
+main {
+    background-image: linear-gradient(to top, #252B63, black);
+}
+
+```
+```
+
+* {
+    font-family: Bacasime Antique, sans-serif;
+
+```
+
+I was able to add a small bit of animation to the buttons using transform: scale that im happy with
+
+
+```
+
+.bookNowbutton:hover,
+.priceListbutton:hover,
+.reviewsButton:hover,
+.formButton:hover {
+    background-color: #181C40;
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.bookNowbutton:active,
+.priceListbutton:active,
+.reviewsButton:active,
+.formButton:active {
+    transform: scale(0.95);
+}
+
+```
+
+Here I used bootstrap to make the images appear 2 in a row on a small screen and 3 in a row on a bigger screen. col-6 makes it take up 6 out of the 12 columns, col-md-4 makes it take up 4 out of 12 columns on medium screen and up.
+
+```
+
+<div class="container py-3 gallery">
+        <div class="row g-3">
+
+            <div class="col-6 col-md-4">
+                <img src="/images/greenGalaxy.jpg" class="img-fluid w-100 rounded-3" alt="image of short black, green nails with cartoonish cat,glitter and galaxy design">
+            </div>
+
+            
+```

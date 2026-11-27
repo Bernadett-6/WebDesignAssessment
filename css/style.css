@@ -85,7 +85,8 @@ table, th, td {
 }
 
 .formPage,
-.pricelistPage {
+.pricelistPage,
+.reviewsPage {
     background-image: linear-gradient(to top, black, #252B63);
     min-height: 100vh;
 }
@@ -126,13 +127,15 @@ table, th, td {
 
 .bookNowbutton:active,
 .priceListbutton:active,
-.reviewsButton:active {
+.reviewsButton:active,
+.formButton:active {
     transform: scale(0.95);
 }
 
 .priceListheading,
 .bookNowheading,
-.addOnheading {
+.addOnheading,
+.reviewsHeading {
     font-size: 2.5rem;
 }
 
@@ -152,6 +155,10 @@ table, th, td {
     white-space: nowrap;
 }
 
+.rating {
+    border-bottom: 2px solid white;
+}
+
 img {
     position: relative;
     max-width: 100%;
@@ -159,10 +166,19 @@ img {
 }
 
 footer {
-    font-size: 3rem;
-    padding: 50px 0;
+    font-size: 4rem;
+    padding: 50px 20px;
     background-color: #252B63;
     color: white;
+}
+
+a.info {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a.info:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 990px) {
@@ -195,11 +211,10 @@ footer {
     }
 
     header {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         font-size: 2rem;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: flex-start;
         gap: 10px;
         }
 
@@ -228,6 +243,7 @@ footer {
         color: white;
         text-decoration: none;
         font-size: clamp(1rem, 4vw, 1.5rem);
+        padding-left: 40px;
     
     }
 
