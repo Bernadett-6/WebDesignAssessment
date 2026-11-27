@@ -6,6 +6,7 @@ https://github.com/Bernadett-6/WebDesignAssessment
 
 hosted-page link:
 
+https://bernadett-6.github.io/WebDesignAssessment/
 
 
 ## Website goal
